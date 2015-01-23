@@ -1,0 +1,293 @@
+{
+    "title": "Demo Contact Form",
+    "organization": "Acme Inc",
+    "author": "Breen Young",
+    "formDefinitionVersion": 1,
+    "description": "Optional short description",
+    "listDisplayFormat": "{{tbSurname}}, {{tbGivenName}}",
+
+    "sections": [
+        {
+            "id": "pgDemographics",
+            "linkId": "hlDemographics",
+            "labelKey": "pgDemographics",
+            "visible": true,
+            "elements":
+                [
+
+                    {
+                        "id": "tbSurname",
+                        "labelKey": "tbSurname",
+                        "type": "text",
+                        "visible": true,
+                        "validation":
+                        {
+                            "rules": { "required": true, "messages": { "required": "messages_requiredField" } }
+                        },
+                        "labelMode": "label"
+                    },
+                    {
+                        "id": "tbGivenName",
+                        "labelKey": "tbGivenName",
+                        "type": "text",
+                        "visible": true,
+                        "validation":
+                        {
+                            "rules": { "required": true, "messages": { "required": "messages_requiredField" } }
+                        },
+                        "maxlength": 50,
+                        "labelMode": "label"
+                    },
+                    {
+                        "id": "tbInitial",
+                        "labelKey": "tbInitial",
+                        "type": "text",
+                        "visible": true,
+                        "validation":
+                        {
+                            "rules": { "required": "function(el) { if($('#tbMailingAddress').val() === '') { return true; } else { return false; }  }", "messages": { "required": "global_online" } }
+                        },
+                        "maxlength": 1,
+                        "labelMode": "label"
+                    },
+                    {
+                        "id": "tbMailingAddress",
+                        "labelKey": "tbMailingAddress",
+                        "type": "text",
+                        "visible": true,
+                        "maxlength": 55,
+                        "labelMode": "label"
+                    },
+                    {
+                        "id": "tbCity",
+                        "labelKey": "tbCity",
+                        "type": "text",
+                        "visible": true,
+                        "maxlength": 30,
+                        "labelMode": "label"
+                    },
+                    {
+                        "id": "tbProvince",
+                        "labelKey": "tbProvince",
+                        "type": "text",
+                        "visible": true,
+                        "maxlength": 2,
+                        "labelMode": "label"
+                    },
+                    {
+                        "id": "tbPostalCode",
+                        "labelKey": "tbPostalCode",
+                        "type": "text",
+                        "visible": true,
+                        "maxlength": 6,
+                        "labelMode": "label"
+                    },
+                    {
+                        "id": "tbPhoneNumber",
+                        "labelKey": "tbPhoneNumber",
+                        "type": "phone",
+                        "visible": true,
+                        "maxlength": 12,
+                        "labelMode": "label"
+                    },
+                    {
+                        "id": "dtDateOfBirth",
+                        "labelKey": "dtDateOfBirth",
+                        "type": "date",
+                        "visible": true,
+                        "labelMode": "label"
+                    },
+                    {
+                        "id": "tbAge",
+                        "labelKey": "tbAge",
+                        "type": "text",
+                        "visible": true,
+                        "maxlength": 3,
+                        "labelMode": "label"
+                    },
+                    {
+                        "id": "rbGender",
+                        "labelKey": "rbGender",
+                        "type": "radiogroup",
+                        "visible": true,
+                        "validation":
+                        {
+                            "rules": { "required": true, "messages": { "required": "messages_requiredField" } }
+                        },
+                        "orientation": "H",
+                        "choices":
+                            [
+                                {
+                                    "id": "rbGenderChoice1",
+                                    "labelKey": "rbGenderChoice1",
+                                    "value": "M"
+                                },
+                                {
+                                    "id": "rbGenderChoice2",
+                                    "labelKey": "rbGenderChoice2",
+                                    "value": "F"
+                                }
+                            ]
+                    }
+                ]
+        },
+        {
+            "id": "pgOtherInfo",
+            "linkId": "hlOtherInfo",
+            "labelKey": "pgOtherInfo",
+            "visible": true,
+            "elements":
+                [
+                    {
+                        "id": "dtDateOfEmp",
+                        "labelKey": "dtDateOfEmp",
+                        "type": "datetime",
+                        "visible": true,
+                        "labelMode": "label"
+                    },
+                    {
+                        "id": "sgSignature",
+                        "labelKey": "sgSignature",
+                        "type": "signature",
+                        "visible": true,
+                        "containerStyle": "border-style: solid; border-size: 5px; border-color: black; height: 200px; width: 700px;"
+                    },
+                    {
+                        "id": "tbComments",
+                        "labelKey": "tbComments",
+                        "type": "textarea",
+                        "visible": true,
+                        "labelMode": "placeholder"
+                    }
+                ]
+        },
+        {
+            "id": "pgFoods",
+            "linkId": "hlFoods",
+            "labelKey": "pgFoods",
+            "visible": true,
+            "elements":
+                [
+                    {
+                        "id": "rbLikeFood",
+                        "labelKey": "rbLikeFood",
+                        "type": "radiogroup",
+                        "visible": true,
+                        "orientation": "H",
+                        "choices":
+                            [
+                                {
+                                    "id": "rbLikeFoodChoice1",
+                                    "labelKey": "global_yes",
+                                    "value": "YES"
+                                },
+                                {
+                                    "id": "rbLikeFoodChoice2",
+                                    "labelKey": "global_no",
+                                    "value": "NO"
+                                }
+                            ]
+                    },
+                    {
+                        "id": "ssFoodDetails",
+                        "labelKey": "ssFoodDetails",
+                        "type": "subsection",
+                        "visible": true,
+                        "expanded": false,
+                        "elements":
+                            [
+
+                                {
+                                    "id": "mtFavFoods",
+                                    "labelKey": "mtFavFoods",
+                                    "addButtonLabelKey": "mtFavFoods_addbutton",
+                                    "type": "multitable",
+                                    "visible": true,
+                                    "fields":
+                                        [
+                                            {
+                                                "id": "time",
+                                                "labelKey": "mtFavFoods_time",
+                                                "element":
+                                                {
+                                                    "id": "global_emptyString",
+                                                    "type": "datetime",
+                                                    "maxlength": 50,
+                                                    "labelMode": "none"
+                                                }
+                                            },
+                                            {
+                                                "id": "flip1",
+                                                "labelKey": "mtFavFoods_flip1",
+                                                "element":
+                                                {
+                                                    "id": "breentest",
+                                                    "type": "flipswitch",
+                                                    "labelOnKey": "global_yes",
+                                                    "labelOffKey": "global_no",
+                                                    "value": "on",
+                                                    "includeLabel": false
+                                                }
+                                            },
+                                            {
+                                                "id": "flip2",
+                                                "labelKey": "mtFavFoods_flip2",
+                                                "element":
+                                                {
+                                                    "id": "breentest3",
+                                                    "type": "flipswitch",
+                                                    "labelOnKey": "global_yes",
+                                                    "labelOffKey": "global_no",
+                                                    "value": "on",
+                                                    "includeLabel": false
+                                                }
+                                            }
+                                        ]
+                                }
+                            ]
+                    }
+                    
+                ]
+        },
+        {
+            "id": "pgMovieGenres",
+            "linkId": "hlMovieGenres",
+            "labelKey": "pgMovieGenres",
+            "visible": true,
+            "elements":
+                [
+                    {
+                        "id": "cbGenres",
+                        "labelKey": "global_emptyString",
+                        "type": "checkboxgroup",
+                        "visible": true,
+                        "orientation": "V",
+                        "required": false,
+                        "choices":
+                            [
+                                {
+                                    "id": "cbGenresChoice1",
+                                    "labelKey": "cbGenresChoice1",
+                                    "value": "ACTION"
+                                },
+                                {
+                                    "id": "cbGenresChoice2",
+                                    "labelKey": "cbGenresChoice2",
+                                    "value": "DRAMA"
+                                },
+                                {
+                                    "id": "cbGenresChoice3",
+                                    "labelKey": "cbGenresChoice3",
+                                    "value": "HORROR"
+                                },
+                                {
+                                    "id": "cbGenresChoice4",
+                                    "labelKey": "cbGenresChoice4",
+                                    "value": "COMEDY"
+                                }
+                            ]
+                    }
+                ]
+        }
+    ]
+}

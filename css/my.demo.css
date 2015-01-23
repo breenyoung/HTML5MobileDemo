@@ -1,0 +1,93 @@
+label.error {
+    color: red;
+}
+/* For portrait layouts only */
+/*
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+
+    .splash {
+        height: 1024px;
+        width: 770px;
+        background: url("../img/splash-portrait.jpg") no-repeat;
+        margin: 0;
+        padding: 0;
+    }
+}
+*/
+
+/* For landscape layouts only */
+/*
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+    .splash {
+        height: 760px;
+        width: 1024px;
+        background: url("../img/splash-landscape.jpg") no-repeat;
+        margin: 0;
+        padding: 0;
+    }
+}
+*/
+
+.ui-btn.my-tooltip-btn,
+.ui-btn.my-tooltip-btn:hover,
+.ui-btn.my-tooltip-btn:active 
+{
+    background: none;
+    border: 0;
+}
+
+
+/* Report Styles */
+#tblReview
+{
+    border-style: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+}
+
+#tblReview th, #tblReview td
+{
+    border: 1px solid black;
+}
+.report_sectionheader td
+{
+    background-color: lightblue;
+}
+
+.report_sectionheader td a:visited, .report_sectionheader td a:hover, .report_sectionheader td a:link
+{
+    color: black;
+}
+
+.report_subsectionheader td
+{
+    background-color: aliceblue;
+    color: black;
+}
+
+.report_error
+{
+    color: red;
+    background-color: lightgrey;
+}
+
+#divSignature
+{
+    border-style: solid;
+    border-size: 5px;
+    border-color: black;
+    height: 200px;
+    width: 700px;
+}
+
+/* Style hack for a fix in JQM for some other issue that removes 'ui-btn-active' class from hrefs on page change */
+/* had to mimic it's style and implement my own */
+.demo-active-button
+{
+    background-color: #3388cc!important;
+    border-color: #3388cc !important;
+    color: #fff !important;
+    text-shadow: 0 1px 0 #005599 !important;
+}
+

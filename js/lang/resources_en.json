@@ -1,0 +1,108 @@
+{
+    "breentest": "Col1",
+    "breentest2": "Col2",
+    "breentest3": "Col3",
+    "breentest4": "Col4",
+    "breentest5": "Col5",
+    "breentest6": "Col6",
+    "breentest7": "Col7",
+
+    "global_appTitle": "Mobile Demo App",
+    "global_menu": "Menu",
+    "global_ok": "Ok",
+    "global_cancel": "Cancel",
+    "global_yes": "Yes",
+    "global_no": "No",
+    "global_genericDialogTitle": "Alert",
+    "global_offline": "Offline",
+    "global_online": "Online",
+    "global_success": "Success",
+    "global_error": "Error",
+    "global_info": "Info",
+    "global_delete": "Delete",
+    "global_genericPleaseSelect": "Please Select",
+    "global_noText": "No Selection",
+    "global_emptyString": "",
+    "globals_termsConditions": "Terms & Conditions",
+    "globals_termsConditionsText": "blah blah blah",
+    "globals_agree": "Agree",
+    "globals_disagree": "Disagree",
+
+    "messages_save_success": "The entry was successfully saved.",
+    "messages_save_error": "Error saving item, check activity log.",
+    "messages_delete_success": "The entry was successfully deleted.",
+    "messages_delete_error": "Error deleting item, check activity log.",
+    "messages_delete_confirm": "Delete this item?",
+    "messages_offline": "You have lost online connectivity",
+    "messages_online": "Online connectivity established",
+    "messages_loginSuccess": "Login Successful",
+    "messages_loginError": "Login Error",
+    "messages_logoutSuccess": "Logout Successful",
+    "messages_idleLogout": "You've been logged out due to inactivity",
+    "messages_requiredField": "Required",
+    "messages_digitField": "Digits only",
+    "messages_requiredLoginFields": "Please enter a username and password",
+
+    "hlAppHome": "Home",
+    "hlReview": "Review",
+    "hlActivityLog": "Activity Log",
+    "hlLogoff": "Logoff",
+    "hlAbout": "About",
+    "hlExistingContacts": "Existing Contacts",
+
+    "tbUsername": "Username",
+    "tbPassword": "Password",
+    "btnLogin": "Login",
+
+    "btnClearLog": "Clear Log",
+    "tbLog": "",
+
+    "btnNewItem": "New Contact",
+    "btnExistingItems": "Existing Contact",
+    "btnSubmitToServer": "Finalize",
+
+
+    "pgDemographics": "Contact Demographics",
+    "pgOtherInfo": "Other Info",
+    "pgFoods": "Food Prefs",
+    "pgMovieGenres": "Movie Genres",
+
+    "tbSurname": "SURNAME",
+    "tbGivenName": "GIVEN NAME",
+    "tbInitial": "INITIAL",
+    "tbMailingAddress": "MAILING ADDRESS",
+    "tbCity": "CITY",
+    "tbProvince": "PROV",
+    "tbPostalCode": "POSTAL CODE",
+    "tbPhoneNumber": "PHONE NUMBER",
+    "dtDateOfBirth": "DATE OF BIRTH",
+    "tbAge": "AGE",
+    "rbGender": "Gender",
+    "rbGenderChoice1": "Male",
+    "rbGenderChoice2": "Female",
+
+    "dtDateOfEmp": "DATE OF EMPLOYMENT",
+    "sgSignature": "SIGNATURE",
+    "tbComments": "COMMENTS",
+
+    "rbLikeFood": "DO YOU LIKE FOOD?",
+
+    "ssFoodDetails": "Food Details",
+
+
+    "mtFavFoods": "Fav Foods",
+    "mtFavFoods_addbutton": "Add",
+
+    "mtFavFoods_time": "Time",
+    "mtFavFoods_flip1": "Flip1",
+    "mtFavFoods_flip2": "Flip2",
+
+
+    "cbGenresChoice1": "Action",
+    "cbGenresChoice2": "Drama",
+    "cbGenresChoice3": "Horror",
+    "cbGenresChoice4": "Comedy"
+
+
+
+}

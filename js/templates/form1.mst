@@ -1,0 +1,101 @@
+<style type="text/css">
+
+    .report_manny img
+    {
+
+        width: 15%;
+    }
+</style>
+
+<table id="tblReview" width="100%">
+    <thead>
+
+    </thead>
+    <tbody>
+        <tr class="report_sectionheader">
+            <td colspan="2"><a href="{{sectionLinks.pgDemographics}}">{{labels.pgDemographics}}</a></td>
+        </tr>
+        <tr>
+            <td data-elemid="{{ids.tbSurname}}">{{labels.tbSurname}}</td>
+            <td>{{values.tbSurname}}</td>
+        </tr>
+        <tr>
+            <td data-elemid="{{ids.tbGivenName}}">{{labels.tbGivenName}}</td>
+            <td>{{values.tbGivenName}}</td>
+        </tr>
+        <tr>
+            <td data-elemid="{{ids.tbInitial}}">{{labels.tbInitial}}</td>
+            <td>{{values.tbInitial}}</td>
+        </tr>
+        <tr>
+            <td>{{labels.tbMailingAddress}}</td>
+            <td>{{values.tbMailingAddress}}</td>
+        </tr>
+        <tr>
+            <td>{{labels.tbCity}}</td>
+            <td>{{values.tbCity}}</td>
+        </tr>
+        <tr>
+            <td>{{labels.tbProvince}}</td>
+            <td>{{values.tbProvince}}</td>
+        </tr>
+        <tr>
+            <td>{{labels.tbPostalCode}}</td>
+            <td>{{values.tbPostalCode}}</td>
+        </tr>
+        <tr>
+            <td>{{labels.tbPhoneNumber}}</td>
+            <td>{{values.tbPhoneNumber}}</td>
+        </tr>
+        <tr>
+            <td>{{labels.dtDateOfBirth}}</td>
+            <td>{{values.dtDateOfBirth}}</td>
+        </tr>
+        <tr>
+            <td>{{labels.tbAge}}</td>
+            <td>{{values.tbAge}}</td>
+        </tr>
+        <tr>
+            <td data-elemid="{{ids.rbGender}}">{{labels.rbGender}}</td>
+            <td>{{values.rbGender}}</td>
+        </tr>
+
+        <tr class="report_sectionheader">
+            <td colspan="2"><a href="{{sectionLinks.pgOtherInfo}}">{{labels.pgOtherInfo}}</a></td>
+        </tr>
+        <tr>
+            <td>{{labels.dtDateOfEmp}}</td>
+            <td>{{values.dtDateOfEmp}}</td>
+        </tr>
+        <tr>
+            <td valign="top">{{labels.sgSignature}}</td>
+            <td>{{{values.sgSignature}}}</td>
+        </tr>
+        <tr>
+            <td>{{labels.tbComments}}</td>
+            <td>{{values.tbComments}}</td>
+        </tr>
+		
+        <tr class="report_sectionheader">
+            <td colspan="2"><a href="{{sectionLinks.pgFoods}}">{{labels.pgFoods}}</a></td>
+        </tr>
+        <tr>
+            <td data-elemid="{{ids.rbLikeFood}}">{{labels.rbLikeFood}}</td>
+            <td>{{values.rbLikeFood}}</td>
+        </tr>		
+        <tr>
+            <td valign="top">{{labels.ssFoodDetails}}</td>
+            <td>{{{values.mtFavFoods}}}</td>
+        </tr>
+
+
+        <tr class="report_sectionheader">
+            <td colspan="2"><a href="{{sectionLinks.pgMovieGenres}}">{{labels.pgMovieGenres}}</a></td>
+        </tr>
+        <tr>
+            <td colspan="2">{{values.cbGenres}}</td>
+        </tr>
+		
+
+    </tbody>
+</table>
